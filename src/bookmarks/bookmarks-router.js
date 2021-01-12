@@ -4,6 +4,7 @@ const logger = require("../logger");
 const dataBank = require("../dataBank");
 const bookmarksRouter = express.Router();
 const bodyParser = express.json();
+const isWebUri = require("isWebUri");
 
 bookmarksRouter
 //Using common path of /bookmarks for the route() method//
